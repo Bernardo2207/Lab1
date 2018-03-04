@@ -25,7 +25,7 @@ public String toString(){
 public double getTerm(int n) throws IndexOutOfBoundsException { 
 	if (n <= 0) 
 		throw new IndexOutOfBoundsException("printAllTerms: Invalid argument value = " + n); 
-	return current*n*(commonFactor); 
+	return current*Math.pow(commonFactor,n-1); 
 	
 	}
 }

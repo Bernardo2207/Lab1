@@ -28,6 +28,10 @@ public class Fibonacci extends Progression {
 		prev = 0; 
 		return value; 
 	}
+public String toString(){
+		
+		return "Fibbon("+(int)this.firstValue()+","+(int)this.prev+")";
+	}
 
 }
 

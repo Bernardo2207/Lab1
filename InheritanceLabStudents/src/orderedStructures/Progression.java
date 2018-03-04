@@ -1,6 +1,8 @@
 package orderedStructures;
 
 import java.security.InvalidParameterException;
+
+import interfaces.Combinable;
 import interfaces.OrderedNumberStructure; 
 
 public abstract class Progression implements OrderedNumberStructure {
@@ -41,6 +43,10 @@ boolean flag=false;
 		for (int i=1; i<n; i++) 
 			value = this.nextValue(); 
 		return value; 
+	}
+	public boolean Equals(Object o) {
+		if(this.toString().equals(o.toString())) {return true;}
+		return false;
 	}
 	
 	public abstract double nextValue(); 
